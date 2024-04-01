@@ -4,9 +4,7 @@ var getAllProducts = async (_req: any, res: any) => {
     try {
         const products = await product.find();     // Find all products
         res.json({
-            success: true,
-            message: "All Products",
-            data : products
+            products
         });
     } catch (error) {
         console.error(error);

@@ -2,6 +2,7 @@ import express from 'express';
 import { connectDB } from './configs/db';
 import { config } from 'dotenv';
 import productRoute from './routes/product-route';
+import { server } from 'typescript';
 
 config();            // Read the .env file
 
@@ -24,3 +25,5 @@ async function startServer() {
     });
 }
 startServer();
+
+export default app;
