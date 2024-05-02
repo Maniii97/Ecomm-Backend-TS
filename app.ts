@@ -11,6 +11,7 @@ const app = express();      // Create an express application
 
 app.use(express.json());    // Parse JSON bodies
 
+app.set('view engine','ejs')
 app.use(express.static('views'))
 
 app.get("/",(_req, res)=>{
