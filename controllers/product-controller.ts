@@ -8,7 +8,9 @@ var getAllProducts = async (_req: any, res: any) => {
         });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ message: " Could not find data, try again or check server" });
+        res.status(500).json({ 
+            message: " Could not find data, try again or check server"
+        });
     }
 };
 
@@ -23,7 +25,9 @@ var createProduct = async (req: any, res: any) => {
         });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ message: "Could not create product, check for Server Error" });
+        res.status(500).json({
+            message: "Could not create product, check for Server Error" 
+        });
     }
 }
 
