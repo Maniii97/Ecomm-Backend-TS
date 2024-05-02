@@ -1,6 +1,5 @@
 {
     "rewrites" : [
-        {"source" : "/","destination":"/views/index.html"},
         {"source" : "/(.*)", "destination" : "/api"}
     ]
 }

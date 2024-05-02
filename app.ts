@@ -12,10 +12,10 @@ const app = express();      // Create an express application
 app.use(express.json());    // Parse JSON bodies
 
 app.set('view engine','ejs')
-app.use(express.static('views'))
+app.use(express.static('public'))
 
 app.get("/",(_req, res)=>{
-    res.sendFile(__dirname+'views/index.html')
+    res.sendFile(__dirname+'public/index.html')
 })
 
 app.use("/api/products",productRoute);     // Use the productRoute for all routes starting with /api/products
