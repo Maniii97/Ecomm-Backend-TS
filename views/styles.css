@@ -12,10 +12,9 @@ h1 {
     color: #333;
 }
 
-h3 {
+h3{
     text-align: center;
-    padding: 16px;
-    font-size: medium;
+    padding: 8px;
     color: #333;
 }
 
@@ -32,20 +31,15 @@ li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-strong {
-    display: block;
-    color: #666;
-}
-
 .label {
     font-weight: bold;
     margin-right: 5px;
 }
 
 .path {
-    margin-left: 16px;
+    margin-right: 20px;
 }
 
-.desc {
-    margin-left: 32px;
+.desc{
+    margin-left : 40px;
 }
