@@ -2,22 +2,21 @@ import express from 'express';
 import { connectDB } from './configs/db';
 import { config } from 'dotenv';
 import productRoute from './routes/product-route';
+import homeRoute from './routes/home-route';
 
-config();            // Read the .env file
+config();
 
 const PORT = process.env.PORT || 8888;
 
-const app = express();      // Create an express application
+const app = express();
 
-app.use(express.json());    // Parse JSON bodies
+app.use(express.json());    // Parse JSON bodies to all routes
 
 app.set('view engine','ejs')
 app.use(express.static('public'))
 
-app.get("/",(_req, res)=>{
-    res.sendFile(__dirname+'public/index.html')
-})
-
+//Routes
+app.use("/", homeRoute);     // Use the homeRoute for all routes starting with /
 app.use("/api/products",productRoute);     // Use the productRoute for all routes starting with /api/products
 
 app.all("*", (_req, _res) => {

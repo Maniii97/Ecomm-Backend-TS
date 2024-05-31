@@ -1,6 +1,6 @@
 import product from "../models/product";
 
-var getAllProducts = async (_req: any, res: any) => {
+const getAllProducts = async (_req: any, res: any) => {
     try {
         const products = await product.find();     // Find all products
         res.json({
@@ -14,7 +14,7 @@ var getAllProducts = async (_req: any, res: any) => {
     }
 };
 
-var createProduct = async (req: any, res: any) => {
+const createProduct = async (req: any, res: any) => {
     try {
         const newProduct = new product(req.body);
         await newProduct.save();
