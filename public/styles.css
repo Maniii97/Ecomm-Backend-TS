@@ -59,3 +59,31 @@ li {
     padding: 10px;
     font-size: 1.2rem;
   }
+
+  @media (max-width: 990px){
+    h1{
+        font-size: 60px;
+        padding: 10px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    ul {
+        margin-top: 250px ;
+        padding: 10px;
+    }
+    li {
+        width: 90%;
+        padding: 15px;
+    }
+    .footer{
+        margin-top: 500px;
+        font-size: 40px;
+    }
+    .intro{
+        margin-top: 100px;
+    }
+    .heading{
+        margin-top: 70px;
+    }
+}
