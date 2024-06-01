@@ -75,6 +75,7 @@ li {
     li {
         width: 90%;
         padding: 15px;
+        border-radius: 15px;
     }
     .footer{
         margin-top: 400px;
